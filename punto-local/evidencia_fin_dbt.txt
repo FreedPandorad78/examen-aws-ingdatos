@@ -1,0 +1,3 @@
+dag_id=examen_ventas/run_id=manual__2026-11-12T11:24:24.085360+00:00/task_id=construir_resumen/attempt=1.log:1
+dag_id=examen_ventas/run_id=manual__2026-11-12T11:24:24.085360+00:00/task_id=verificar_freshness/attempt=1.log:1
+dag_id=examen_ventas/run_id=manual__2026-11-12T11:28:22.268855+00:00/task_id=verificar_freshness/attempt=1.log:0

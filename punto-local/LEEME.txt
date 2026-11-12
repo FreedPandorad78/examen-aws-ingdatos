@@ -1,0 +1,9 @@
+Entrega del examen (dbt + Airflow, source freshness)
+
+Ejecución 1 (fuente actualizada): run id manual__2026-11-12T11:24:24.085360+00:00
+Ejecución 2 (fuente desactualizada): run id manual__2026-11-12T11:28:22.268855+00:00
+
+capturas_ejecuciones.pdf: capturas de las dos ejecuciones y del log de freshness.
+resumen_antes.txt: consultado después de la ejecución 1 y antes de "scenario desactualizada"; incluye la columna extra "tipo" para comprobar la precisión decimal.
+resumen_despues.txt: consultado después del bloqueo de la ejecución 2.
+evidencia_build_no_corrio.txt: conteo de "INICIO dbt" por log; construir_resumen de la ejecución 2 no tiene archivo de log.

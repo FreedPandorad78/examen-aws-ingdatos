@@ -1,0 +1,20 @@
+aws_glue_catalog_database.mensajeria: Creating...
+aws_s3_bucket.datos: Creating...
+aws_s3_bucket.datos: Creation complete after 5s [id=dor-0302-de-mensajeria]
+aws_s3_bucket_public_access_block.datos: Creating...
+aws_athena_workgroup.mensajeria: Creating...
+aws_s3_bucket_public_access_block.datos: Creation complete after 0s [id=dor-0302-de-mensajeria]
+
+Error: listing tags for Glue Database (arn:aws:glue:us-east-2:355381435057:database/mensajeria): operation error Glue: GetTags, https response error StatusCode: 400, RequestID: 3e8dad67-b835-4cf0-bc15-bb17124ecd7a, api error AccessDeniedException: User: arn:aws:iam::355381435057:user/user_cli is not authorized to perform: glue:GetTags on resource: arn:aws:glue:us-east-2:355381435057:database/mensajeria because no identity-based policy allows the glue:GetTags action
+
+  with aws_glue_catalog_database.mensajeria,
+  on principal.tf line 31, in resource "aws_glue_catalog_database" "mensajeria":
+  31: resource "aws_glue_catalog_database" "mensajeria" {
+
+
+Error: listing tags for Athena WorkGroup (arn:aws:athena:us-east-2:355381435057:workgroup/wg_mensajeria): operation error Athena: ListTagsForResource, https response error StatusCode: 400, RequestID: bacf8445-92bf-448c-bf2a-2f7b0885c74f, api error AccessDeniedException: You are not authorized to perform: athena:ListTagsForResource on the resource. After your AWS administrator or you have updated your permissions, please try again.
+
+  with aws_athena_workgroup.mensajeria,
+  on principal.tf line 96, in resource "aws_athena_workgroup" "mensajeria":
+  96: resource "aws_athena_workgroup" "mensajeria" {
+

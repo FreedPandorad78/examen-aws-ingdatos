@@ -1,0 +1,19 @@
+aws_glue_catalog_database.mensajeria: Destroying... [id=355381435057:mensajeria]
+aws_athena_workgroup.mensajeria: Destroying... [id=wg_mensajeria]
+aws_glue_catalog_database.mensajeria: Destruction complete after 1s
+aws_glue_catalog_database.mensajeria: Creating...
+aws_athena_workgroup.mensajeria: Destruction complete after 1s
+aws_athena_workgroup.mensajeria: Creating...
+aws_athena_workgroup.mensajeria: Creation complete after 1s [id=wg_mensajeria]
+aws_glue_catalog_database.mensajeria: Creation complete after 1s [id=355381435057:mensajeria]
+aws_glue_catalog_table.entregas: Creating...
+aws_glue_catalog_table.entregas: Creation complete after 1s [id=355381435057:mensajeria:entregas]
+
+Apply complete! Resources: 3 added, 0 changed, 2 destroyed.
+
+Outputs:
+
+base_datos = "mensajeria"
+bucket = "dor-0302-de-mensajeria"
+tabla = "entregas"
+workgroup = "wg_mensajeria"

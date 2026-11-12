@@ -1,0 +1,2 @@
+# Copia este archivo como terraform.tfvars y pon un nombre de bucket único en AWS
+nombre_bucket = "CAMBIA-ESTE-NOMBRE"

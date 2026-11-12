@@ -4,6 +4,20 @@ Consulta de CSV de entregas en S3 desde Athena, con tabla externa en Glue y
 partition projection por fecha. Una fecha nueva se incorpora subiendo el archivo,
 sin crawlers ni particiones manuales. El enunciado está en `ENUNCIADO.md`.
 
+## Contenido de la entrega
+
+Este repositorio reúne los dos puntos del examen:
+
+| Punto | Dónde está | Qué contiene |
+| --- | --- | --- |
+| AWS: Athena, Glue y Terraform con partition projection | Raíz del repo | `infraestructura/`, `consultas/`, `resultados/`, `evidencias/`, `scripts/` y `respuestas.md` |
+| Local: dbt y Airflow con source freshness | Carpeta `punto-local/` | `ventas_diarias.sql`, `sources.yml`, `examen_ventas.py`, `capturas_ejecuciones.pdf`, `resumen_antes.txt`, `resumen_despues.txt`, `evidencia_build_no_corrio.txt`, `respuestas.md` y `LEEME.txt` |
+
+- Cada punto tiene su propio `respuestas.md`: el de la raíz es del punto de AWS y `punto-local/respuestas.md` es del punto local.
+- `punto-local/LEEME.txt` indica el identificador de cada ejecución de Airflow.
+- Las instrucciones de este README (prerrequisitos, despliegue, consultas y limpieza) corresponden al punto de AWS.
+
+
 ## Prerrequisitos
 
 - Terraform >= 1.5 (probado con 1.16.4), AWS CLI v2, git y bash.

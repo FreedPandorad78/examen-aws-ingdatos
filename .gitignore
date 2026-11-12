@@ -1,0 +1,20 @@
+# Credenciales y secretos
+.env
+.env.*
+*.pem
+*.key
+.aws/
+terraform.tfvars
+*.tfvars
+
+# Terraform (estado, caché local y planes)
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+crash.log
+override.tf
+override.tf.json
+
+# macOS
+.DS_Store
